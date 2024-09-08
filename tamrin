@@ -1,0 +1,136 @@
+#include <stdio.h>
+
+int main(){
+  int nombre_de_produit;
+  int tableaux[100];
+  int total , le_plue_elevee ,moyeen ;
+  printf("combien de produits ont ete vendus aujourd'hui ?");
+  scanf("%d",&nombre_de_produit);
+
+  for (int i = 0; i < nombre_de_produit; i++){
+    printf("Entrez le montant de la vente de produit %d",i+1);
+    scanf("%d",&tableaux[i]);
+    
+  }
+  moyeen = total/nombre_de_produit;
+le_plue_elevee = tableaux[0];
+  for (int i = 0; i < nombre_de_produit; i++){
+    total +=tableaux[i];
+    if (le_plue_elevee> tableaux[i])
+    {
+      le_plue_elevee = tableaux[i];
+
+    }
+    if (tableaux[i]>moyeen)
+    {
+      printf("le plue elevee a une moyenne est : %d",tableaux[i]);
+    }
+    if (tableaux[i]>100)
+    {
+      printf("le plue elevee a  100 est : %d",tableaux[i]);
+    }
+    if (tableaux[i]<100)
+    {
+      printf("le vents inferieures a  100 est : %d",tableaux[i]);
+    }
+    
+    
+  }
+  printf("le total des ventes est ; %d",total);
+  printf("le vente la plus elvee est ; %d",le_plue_elevee);
+
+  return 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
